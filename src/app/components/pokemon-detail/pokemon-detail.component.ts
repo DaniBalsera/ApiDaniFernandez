@@ -20,11 +20,13 @@ export class PokemonDetailComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  /*Obtenemos el mapa de habilidades de los pokemon*/
 
   getAbilities(): string {
     return this.pokemon.abilities.map(x => x.ability.name).join(', ');
   }
 
+  /*Obtenemos el los tipos de los pokemon*/
   getPrincipalType(list: any[]) {
     return list.filter(x => x.slot === 1)[0]?.type.name;
   }
