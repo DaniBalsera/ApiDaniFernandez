@@ -1,3 +1,5 @@
+
+/*Este  módulo permite implementar componentes Angular con un diseño basado en Material Design*/
 import {NgModule} from '@angular/core';
 
 import {A11yModule} from '@angular/cdk/a11y';
